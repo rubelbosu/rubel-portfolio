@@ -78,7 +78,6 @@ const AppNavbar = () => {
             <Link
               color="foreground"
               href={item.link}
-              size="lg"
               className={`dark:hover:text-green-400 hover:text-green-600 font-bold ${(router.pathname === item.link)? "text-green-400":""}`}
             >
               {item.text}
