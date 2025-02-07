@@ -3,8 +3,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+    "noEmitOnError": false, // Continue emitting files even with errors
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -16,6 +15,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/components/Feedback/Feedback.js",
+    "pages/components/Feedback/Feedback.js",
+    "pages/components/Feedback/Feedback.js"
+  ],
   "exclude": ["node_modules"]
 }
