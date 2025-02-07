@@ -35,7 +35,7 @@ const Feedbacks = ({ loading }) => {
     let temp = data;
     if (value === "Recent") {
       temp.feedbacks.sort((a, b) => {
-        return new Date(a.Time) - new Date(b.Time);
+       return new Date(a.Time).getTime() - new Date(b.Time).getTime();
       });
       setData({ ...data, feedbacks: temp.feedbacks });
     } else if (value === "Best") {
