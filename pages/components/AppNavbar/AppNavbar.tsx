@@ -11,8 +11,8 @@ import {
 import { useState } from "react";
 import { Switch } from "@nextui-org/react";
 import {Divider} from "@nextui-org/react";
-import { MoonIcon } from "../DarkmodeBtn/MoonIcon";
-import { SunIcon } from "../DarkmodeBtn/SunIcon";
+import MoonIcon from "../DarkmodeBtn/MoonIcon";
+import SunIcon  from "../DarkmodeBtn/SunIcon";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import Link from "next/link";
